@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "ES2016",                                /* Specify ECMAScript target version. */
+    "module": "commonjs",                              /* Use CommonJS for module system (Node.js default). */
+    "rootDir": "./src",                                /* Set the root directory of input files. */
+    "outDir": "./dist",                                /* Redirect output structure to the 'dist' directory. */
+    "esModuleInterop": true,                           /* Enables default imports for CommonJS modules. */
+    "forceConsistentCasingInFileNames": true,          /* Enforce consistent casing in file names. */
+
+    /* Type Checking */
+    "strict": true,                                    /* Enable all strict type checking options. */
+    "noImplicitAny": true,                             /* Raise error on declarations with an implied 'any' type. */
+    "strictNullChecks": true,                          /* Ensure 'null' and 'undefined' are treated as separate types. */
+    "noUnusedLocals": true,                            /* Error on unused local variables. */
+    "noUnusedParameters": true,                        /* Error on unused parameters. */
+    "noImplicitReturns": true,                         /* Error if code paths do not explicitly return a value. */
+    "noFallthroughCasesInSwitch": true,                /* Error on fallthrough cases in switch statements. */
+
+    /* Modules and Paths */
+    "moduleResolution": "node",                        /* Use Node.js module resolution. */
+    "baseUrl": "./",                                   /* Set the base directory for non-relative module imports. */
+    "paths": {                                         /* Aliases for cleaner imports (optional). */
+      "@config/*": ["src/config/*"],
+      "@controllers/*": ["src/controllers/*"],
+      "@models/*": ["src/models/*"],
+      "@middleware/*": ["src/middleware/*"],
+      "@routes/*": ["src/routes/*"]
+    },
+
+    /* Emit */
+    "sourceMap": true,                                 /* Generate source map files for debugging. */
+    "declaration": true,                               /* Emit `.d.ts` type declaration files. */
+    "removeComments": true                             /* Remove comments in emitted JavaScript. */
+  },
+  "include": ["src/**/*", "tsconfig.json"],                             /* Specify files to include in compilation. */
+  "exclude": ["node_modules", "dist"]                  /* Exclude unnecessary files and directories. */
+}
